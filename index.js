@@ -12,7 +12,7 @@ BuildEnvCompiler.prototype.type = 'javascript';
 BuildEnvCompiler.prototype.extension = 'buildenv';
 BuildEnvCompiler.prototype.compile = function(data, path, callback) {
     var out = {};
-    var data = this.options.data;
+    var data = this.options;
 
     for (var k in data) {
         if (typeof data[k] === 'function') {
@@ -21,7 +21,7 @@ BuildEnvCompiler.prototype.compile = function(data, path, callback) {
             out[k] = data[k];
         }
     }
-    callback(null, "module.exports = " + JSON.stringify(this.options) + ";");
+    callback(null, "module.exports = " + JSON.stringify(out) + ";");
 };
 BuildEnvCompiler.prototype.getDependencies = function(data, path, callback) {
     glob(this.globPattern, {}, function (err, files) {
