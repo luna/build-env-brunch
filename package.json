@@ -1,0 +1,17 @@
+{
+  "name": "build-env-brunch",
+  "version": "1.0.0",
+  "description": "brunch-config data in the app",
+  "author": "Kamil Figiela (http://kfigiela.github.io/)",
+  "homepage": "https://github.com/kfigiela/build-env-brunch",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kfigiela/build-env-brunch.git"
+  },
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "glob": "^5.0.14"
+  },
+  "devDependencies": {}
+}
