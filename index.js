@@ -4,7 +4,7 @@ var fs   = require('fs')
 function BuildEnvCompiler(config) {
   var options = config.plugins && config.plugins.build_env;
   this.options = options;
-  this.globPattern  = "app/**/*.[jh]s"
+  this.globPattern  = "./**/*.[jh]s"
 }
 
 BuildEnvCompiler.prototype.brunchPlugin = true;
